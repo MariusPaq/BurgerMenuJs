@@ -1,0 +1,20 @@
+.topnav{overflow: hidden;background-color: black;}
+.topnav a{float: left;display: block;color: white;text-align: center;padding: 16px 16px;text-decoration: none;font-size: 17px;}
+.topnav a:hover{background-color: white;color: black;}
+.topnav .icon{display: none;}
+
+/*BurgerIcon*/
+.burger{width: 32px;height: 4px;background-color: black;margin: 7px 0;}
+.change #burger1{transform: rotate(-45deg) translate(-9px, 6px);}
+.change #burger2{opacity: 0;}
+.change #burger3{transform: rotate(45deg) translate(-8px, -8px);}
+
+/*Responsive Menu*/
+@media screen and (max-width: 520px) {
+.topnav{background-color: white;}
+.topnav a{display: none;}
+.topnav a.icon{background-color: white;float: right;display: block;}
+.topnav.responsive{position: relative;background-color: black;}
+.topnav.responsive.icone{position: absolute;right: 0;top: 0;}
+.topnav.responsive a{float: none;display: block;text-align: left;}
+}
